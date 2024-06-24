@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif3;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 1rem 7%;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: #22AAA1;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.548);
+}
+
+
+.right_header{
+    display: flex;
+}
+
+.house_home{
+    display: flex;
+    font-size: 25px;
+}
+
+.house_home:hover{
+    border-bottom: 0.8px solid black;
+    cursor: pointer;
+}
+
+a{
+    color: black;
+}
+
+.redes{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    margin-right: auto;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.container_redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.redes .insta:hover{
+    border-bottom: 0.8px solid black;
+    cursor: pointer;
+}
+
+.redes .face:hover{
+    border-bottom: 0.8px solid black;
+    cursor: pointer;
+}
+
+.redes .git:hover{
+    border-bottom: 0.8px solid black;
+    cursor: pointer;
+}
+
+.redes .insta{
+    color: black
+}
+
+.redes .face{
+    color: black
+}
+
+.redes .git{
+    color: black
+}
+
+.container_header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    border-left: 10px;
+    gap: 15px;
+}
+
+.right_header:hover{
+    border-bottom: 0.8px solid black;
+    cursor: pointer;
+}
+
+.home{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #22AAA1;
+    flex-direction: row;
+}
+
+.right-img{
+    width: 90%;
+}
+
+.img_svg{
+    display: flex;
+    width: 48%;
+    height: 100%;
+}
+
+.container_titulo{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_inicio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.tittle{
+    display: flex;
+    font-size: 110px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bmvd{
+    display: flex;
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.container_about{
+    display: flex;
+    flex-direction: row;
+}
+
+.about_tela{
+    background-color: #63E2C6;
+}
+
+.container_about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_about{
+    width: 100px;
+}
+
+.about{
+    width: 49%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.about_text{
+    display: flex;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.foto_about{
+    display: flex;
+    width: 23vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    border-radius: 10px;
+}
+
+.curriculo_tela{
+    height: 100%;
+    background-color: #22AAA1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.curriculo_container{
+    height: 100%;
+    width: 49%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.curriculo_text{
+    display: flex;
+    font-size: 27px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.container_curriculo_text{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.curriculo_rightimg{
+    width: 49%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
