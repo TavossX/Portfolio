@@ -212,7 +212,9 @@ a:hover{
 .about{
     height: 80%;
     padding: 2rem;
-    width: 50%;
+    width: 40%;
+    border-radius: 30px;
+    background-color: #c32121;
     color: black;
     display: flex;
     flex-direction: column;
@@ -242,6 +244,7 @@ a:hover{
 }
 
 .curriculo_tela{
+    padding-top: 4rem;
     background-color: rgb(219, 47, 47);
     display: flex;
     justify-content: center;
@@ -249,7 +252,6 @@ a:hover{
 }
 
 .container_text{
-    padding-top: 3rem;
     height: 80%;
     width: 50%;
     display: flex;
@@ -266,11 +268,16 @@ a:hover{
 }
 
 .container_curriculo{
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 50%;
+    background-color: #ab1b1b;
+    border-radius: 30px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: default;
 }
 
 
