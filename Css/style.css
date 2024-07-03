@@ -570,6 +570,32 @@ a:hover{
     }
 }
 
+@media screen and (max-width:375px){
+    .about .tittle{
+        font-size: 48px;
+    }
+
+    .about_text{
+        font-size: 22px;
+    }
+
+    .container_titulo .tittle{
+        font-size: 70px;
+    }
+
+    .bmvd{
+        font-size: 60px;
+    }
+
+    .curriculo_tela{
+        padding-top: 3rem;
+    }
+
+    .container_curriculo{
+        height: 80%;
+    }
+}
+
 @keyframes navLinkFade {
     from{
         opacity: 0;
