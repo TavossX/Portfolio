@@ -25,7 +25,7 @@ header{
     align-items: center;
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: #F29877;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.548);
     justify-content: center;
     z-index: 999;
@@ -101,7 +101,7 @@ a{
 }
 
 .redes p{
-    color:rgb(219, 47, 47) ;
+    color:#F22222 ;
     transition: .5s ease;
 }
 
@@ -139,7 +139,7 @@ a{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #F29877;
     flex-direction: row;
     transition: .5s ease;
 }
@@ -207,7 +207,7 @@ a:hover{
     display: flex;
     font-size: 130px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(219, 47, 47);
+    color: #F22222;
 }
 
 .container_about{
@@ -216,7 +216,7 @@ a:hover{
 }
 
 .about_tela{
-    background-color: #a71818;
+    background-color: #8C030E;
 }
 
 .container_about{
@@ -240,7 +240,7 @@ a:hover{
     padding: 2rem;
     width: 40%;
     border-radius: 30px;
-    background-color: #c32121;
+    background-color: #F22222;
     color: black;
     display: flex;
     flex-direction: column;
@@ -270,7 +270,7 @@ a:hover{
 
 .curriculo_tela{
     padding-top: 4rem;
-    background-color: rgb(219, 47, 47);
+    background-color: #F22222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +295,7 @@ a:hover{
 .container_curriculo{
     height: 85%;
     width: 50%;
-    background-color: #ab1b1b;
+    background-color: #8C030E;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
