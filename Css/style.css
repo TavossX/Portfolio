@@ -423,7 +423,7 @@ a:hover{
         right: 0;
         width: 50vw;
         height: 80vh;
-        background-color: #ffffff;
+        background-color: #F29877;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -542,6 +542,32 @@ a:hover{
         font-size: 40px;
     }
 
+}
+
+@media screen and (max-width:390px){
+    .about .tittle{
+        font-size: 50px;
+    }
+
+    .about_text{
+        font-size: 25px;
+    }
+
+    .container_titulo .tittle{
+        font-size: 65px;
+    }
+
+    .bmvd{
+        font-size: 65px;
+    }
+
+    .curriculo_tela{
+        padding-top: 3rem;
+    }
+
+    .container_curriculo{
+        height: 85%;
+    }
 }
 
 @keyframes navLinkFade {
