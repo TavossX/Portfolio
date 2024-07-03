@@ -1,6 +1,6 @@
 ScrollReveal({
     reset: true,
-    distance: '50px',
+    distance: '10px',
     duration: 2000,
     delay: 100
 });
