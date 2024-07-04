@@ -732,7 +732,7 @@ a{
     }
 }
 
-@media screen and (max-width:300px){
+@media screen and (min-width:300px) and (max-width:400px){
     .container_titulo p {
         font-size: 45px;
     }
