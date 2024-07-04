@@ -64,15 +64,19 @@ header{
 }
 
 .right_header:hover a{
-    transform: scale(1.3);
+    transform: scale(1.2);
+}
+
+.house_home:hover a{
+    transform: scale(1.2);
 }
 
 .right_header a{
     transition: .5s ease;
 }
 
-.house_home:hover{
-    transform: scale(1.3);
+.house_home a{
+    transition: .5s ease;
 }
 
 .house_home{
@@ -101,7 +105,7 @@ a{
 }
 
 .redes p{
-    color:#F22222 ;
+    color:#8C030E;
     transition: .5s ease;
 }
 
@@ -167,6 +171,20 @@ a{
     cursor: default;
 }
 
+.container_titulo span{
+    color: #8C030E;
+}
+
+.container_titulo p{
+    font-size: 130px;
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .social{
     height: 50px;
     width: 200px;
@@ -182,7 +200,7 @@ a{
     padding: 7px;
 }
 
-a:hover{
+.social a:hover{
     transform: scale(1.3);
 }
 
@@ -197,18 +215,15 @@ a:hover{
 
 .tittle{
     width: 100%;
+    height: 90px;
     display: flex;
     font-size: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bmvd{
-    display: flex;
-    font-size: 130px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #F22222;
-}
 
 .container_about{
     display: flex;
@@ -239,21 +254,25 @@ a:hover{
     height: 70%;
     padding: 2rem;
     width: 40%;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: #F22222;
     color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .tittle span{
+    font-size: 80px;
     color: #ffffff;
 }
 
 .about .tittle{
-    gap: 20px;
+    height: 170px;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .about_text{
@@ -288,21 +307,22 @@ a:hover{
 }
 
 .container_text .tittle{
-    color: #ffff;
+    
     border-bottom: 1px solid;
 }
 
 .container_curriculo{
     height: 85%;
     width: 50%;
-    background-color: #8C030E;
-    border-radius: 30px;
+    background-color: #F29877;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     cursor: default;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -334,6 +354,16 @@ a:hover{
     align-items: center;
 }
 
+@media screen and (max-width:1440px){
+    .tittle{
+        font-size: 70px;
+    }
+
+    .about_text{
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width:1024px){
     .img_svg{
         display: none;
@@ -344,7 +374,7 @@ a:hover{
     }
 
     .tittle{
-        font-size: 140px;
+        font-size: 100px;
     }
 
     .bmvd{
@@ -360,8 +390,12 @@ a:hover{
         width: 85%;
     }
 
+    .about_tela{
+        padding-top: 3rem;
+    }
+
     .about_text{
-        font-size: 49px;
+        font-size: 35px;
         letter-spacing: 0px;
     }
 
@@ -371,7 +405,11 @@ a:hover{
 
     .container_curriculo{
         width: 85%;
-        height: 80%;
+        height: 92%;
+    }
+
+    .container_curriculo .tittle{
+        width: 60%;
     }
 
     .container_text{
@@ -386,12 +424,15 @@ a:hover{
     }
 
     .curriculo_text{
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .curriculo_tela{
+        padding-top: 5rem;
     }
 
     .social{
-        height: 5%;
-        width: 35%;
+        display: none;
     }
 
     .social a{
@@ -421,8 +462,8 @@ a:hover{
         position: absolute;
         top: 6vh;
         right: 0;
-        width: 50vw;
-        height: 80vh;
+        width: 40vw;
+        height: 100vh;
         background-color: #F29877;
         flex-direction: column;
         justify-content: space-evenly;
@@ -454,6 +495,16 @@ a:hover{
     width: 140px;
 }
 
+@media screen and (max-width:768px){
+    .about .tittle{
+        font-size: 89px;
+    }
+
+    .nav-list{
+        top: 7vh;
+    }
+}
+
 @media screen and (max-width:430px){
     header{
         height: 70px;
@@ -467,6 +518,15 @@ a:hover{
         height: 40px;
         font-size: 40px;
         align-items: center;
+    }
+
+    .nav-list{
+        width: 50vw;
+        top: 6vh;
+    }
+
+    .nav-list.active li{
+        font-size: 20px;
     }
 
     .redes p{
@@ -486,8 +546,8 @@ a:hover{
         font-size: 80px;
     }
 
-    .bmvd{
-        font-size: 70px;
+    .container_titulo p{
+        font-size: 65px;
     }
 
     .container_about{
@@ -501,7 +561,7 @@ a:hover{
     }
 
     .about_text{
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .about{
@@ -544,13 +604,77 @@ a:hover{
 
 }
 
+@media screen and (max-width:414px){
+    .about .tittle{
+        display: flex;
+        font-size: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .nav-list{
+        top: 6vh;
+    }
+
+    .about_text{
+        font-size: 22px;
+    }
+
+    .about .tittle{
+        font-size: 43px;
+    }
+
+    .container_titulo .tittle{
+        font-size: 65px;
+    }
+
+    .bmvd{
+        font-size: 65px;
+    }
+
+    .curriculo_tela{
+        padding-top: 3rem;
+    }
+
+    .container_curriculo{
+        height: 90%;
+    }
+
+    .container_text .tittle{
+        font-size: 60px;
+    }
+
+    .container_curriculo_text{
+        width: 90%;
+        height: 90%;
+    }
+
+    .curriculo_text{
+        font-size: 20px;
+    }
+
+    .curriculo_text img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .container_titulo p {
+        font-size: 55px;
+    }
+}
+
 @media screen and (max-width:390px){
     .about .tittle{
         font-size: 50px;
     }
 
     .about_text{
-        font-size: 25px;
+        font-size: 24px;
+    }
+
+    .about .tittle{
+        font-size: 43px;
     }
 
     .container_titulo .tittle{
@@ -572,19 +696,27 @@ a:hover{
 
 @media screen and (max-width:375px){
     .about .tittle{
-        font-size: 48px;
+        font-size: 41px;
     }
 
     .about_text{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .container_titulo .tittle{
         font-size: 70px;
     }
 
+    .container_titulo p{
+        font-size: 55px;
+    }
+
     .bmvd{
         font-size: 60px;
+    }
+
+    .container_about{
+        padding-top: 0rem;
     }
 
     .curriculo_tela{
@@ -594,7 +726,13 @@ a:hover{
     .container_curriculo{
         height: 80%;
     }
+
+    .curriculo_text img{
+        width: 30px;
+    }
 }
+
+
 
 @keyframes navLinkFade {
     from{
