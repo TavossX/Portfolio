@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
+:root {
+    --cor-header : #031926;
+    --cor-tittle : #031926;
+    --cor-home : #77ACA2;
+    --cor-fundo-about : #031926;
+    --cor-about : #468189;
+    --cor-fundo-curriculo : #468189;
+    --cor-curriculo : #031926;
+}
+
 *, html {
 
     scroll-behavior: smooth !important;
@@ -14,18 +24,27 @@
     list-style: none;
 }
 
+p{
+    color: #ffff;
+}
+
 section {
     height: 100vh;
 }
 
+.fodase{
+    width: 35vw;
+    font-size: 1.8rem;
+}
+
 header{
     position: fixed;
-    height: 60px;
+    height: 6vh;
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: row;
-    background-color: #F29877;
+    background-color: var(--cor-about);
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.548);
     justify-content: center;
     z-index: 999;
@@ -84,8 +103,16 @@ header{
     font-size: 25px;
 }
 
+.right_header a{
+    color: #ffff;
+}
+
+.house_home a{
+    color: #ffff;
+}
+
 a{
-    color: black;
+    color: #ffff;
 }
 
 .redes{
@@ -105,7 +132,7 @@ a{
 }
 
 .redes p{
-    color:#8C030E;
+    color:#ffff;
     transition: .5s ease;
 }
 
@@ -128,7 +155,7 @@ a{
     align-content: space-between;
     justify-content: center;
     flex-direction: row;
-    color: black;
+    color: #ffff;
     outline: none;
     text-decoration: none;
     border-left: 10px;
@@ -143,7 +170,7 @@ a{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: #F29877;
+    background-color: var(--cor-curriculo);
     flex-direction: row;
     transition: .5s ease;
 }
@@ -161,6 +188,7 @@ a{
 
 
 .container_titulo{
+    gap: 2rem;
     height: 100%;
     width: 50%;
     display: flex;
@@ -172,12 +200,12 @@ a{
 }
 
 .container_titulo span{
-    color: #8C030E;
+    color: var(--cor-about);
 }
 
 .container_titulo p{
     font-size: 130px;
-    height: 55%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -231,7 +259,39 @@ a{
 }
 
 .about_tela{
-    background-color: #8C030E;
+    background-color: var(--cor-about);
+}
+
+.about{
+    width: 40vw;
+    height: 70vh;
+    border: 1px solid;
+    background-color: var(--cor-curriculo);
+    border-radius: 20px;    
+}
+
+.text_about{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.tittle_about{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
+.tittle_about h1{
+    color: white;
+    font-size: 50px;
+}
+
+.tittle_about span{
+    font-size: 30px;
 }
 
 .container_about{
@@ -250,7 +310,11 @@ a{
     justify-content: center;
 }
 
-.about{
+.fodase span {
+    color: var(--cor-about);
+}
+
+/* .about{
     height: 70%;
     padding: 2rem;
     width: 40%;
@@ -276,9 +340,11 @@ a{
 }
 
 .about_text{
+    width: 100%;
+    height: 70%;
     display: flex;
-    font-size: 40px;
-}
+    font-size: 1.8vw;
+} */
 
 .foto_about{
     display: flex;
@@ -289,7 +355,7 @@ a{
 
 .curriculo_tela{
     padding-top: 4rem;
-    background-color: #F22222;
+    background-color: var(--cor-curriculo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,12 +375,13 @@ a{
 .container_text .tittle{
     
     border-bottom: 1px solid;
+    color: #ffff;
 }
 
 .container_curriculo{
-    height: 85%;
+    height: 97%;
     width: 50%;
-    background-color: #F29877;
+    background-color: var(--cor-about);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -331,16 +398,17 @@ a{
     display: flex;
     font-size: 27px;
     align-items: center;
+    color:var(--cor-curriculo);
 }
 
 .curriculo_text img{
-    width: 50px;
+    width: 45px;
 }
 
 .container_curriculo_text{
     width: 650px;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -354,7 +422,7 @@ a{
     align-items: center;
 }
 
-@media screen and (max-width:1440px){
+/* @media screen and (max-width:1440px){
     .tittle{
         font-size: 70px;
     }
@@ -362,94 +430,27 @@ a{
     .about_text{
         font-size: 30px;
     }
+} */
+
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+.nav-list.active li{
+    font-size: 25px;
+}
+
+.nav-list2{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
 }
 
 @media screen and (max-width:1024px){
-    .img_svg{
-        display: none;
-    }
-
-    .container_titulo{
-        width: 100%;
-    }
-
-    .tittle{
-        font-size: 100px;
-    }
-
-    .bmvd{
-        font-size: 160px;
-    }
-
-    .img_about{
-        display: none;
-    }
-
-    .about{
-        height: 70%;
-        width: 85%;
-    }
-
-    .about_tela{
-        padding-top: 3rem;
-    }
-
-    .about_text{
-        font-size: 35px;
-        letter-spacing: 0px;
-    }
-
-    .container_about .tittle{
-        width: 100%;
-    }
-
-    .container_curriculo{
-        width: 85%;
-        height: 92%;
-    }
-
-    .container_curriculo .tittle{
-        width: 60%;
-    }
-
-    .container_text{
-        height: 90%;
-        width: 100%;
-    }
-
-    .container_curriculo_text{
-        width: 90%;
-        height: 80%;
-        justify-content: space-evenly;
-    }
-
-    .curriculo_text{
-        font-size: 30px;
-    }
-
-    .curriculo_tela{
-        padding-top: 5rem;
-    }
-
-    .social{
-        display: none;
-    }
-
-    .social a{
-        font-size: 55px;
-    }
-
-    header{
-        height: 90px;
-    }
 
     .container_a{
         display: none;
-    }
-
-    .redes{
-        height: 50px;
-        font-size: 40px;
     }
 
     .mobile{
@@ -464,12 +465,16 @@ a{
         right: 0;
         width: 40vw;
         height: 100vh;
-        background-color: #F29877;
+        background-color: #468189;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+    }
+    
+    .img_about{
+        width: 85vw;
     }
 
     .nav-list li{
@@ -480,19 +485,6 @@ a{
     .mobile-menu{
         display: block;
     }
-}
-.nav-list.active{
-    transform: translateX(0);
-}
-
-.nav-list.active li{
-    font-size: 25px;
-}
-
-.nav-list2{
-    display: flex;
-    justify-content: space-between;
-    width: 140px;
 }
 
 @media screen and (max-width:768px){
@@ -561,7 +553,7 @@ a{
     }
 
     .about_text{
-        font-size: 24px;
+        font-size: 19px;
     }
 
     .about{
@@ -595,7 +587,7 @@ a{
     }
 
     .curriculo_text{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .curriculo_text img{
