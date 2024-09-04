@@ -69,6 +69,7 @@
     .curriculo_tela .container_curriculo{
         width: 85%;
         height: 75%;
+        border-radius: 15px;
     }
 
     .container_curriculo .tittle{
