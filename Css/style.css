@@ -35,6 +35,13 @@ section {
 .fodase{
     width: 35vw;
     font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.tittle_container_about{
+    width: 100%;
 }
 
 header{
@@ -281,8 +288,9 @@ a{
 
 .tittle_about{
     display: flex;
-    align-items: baseline;
     width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .tittle_about h1{
@@ -292,6 +300,7 @@ a{
 
 .tittle_about span{
     font-size: 30px;
+    color: var(--cor-about);
 }
 
 .container_about{
@@ -362,7 +371,7 @@ a{
 }
 
 .container_text{
-    height: 80%;
+    height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -406,13 +415,15 @@ a{
 }
 
 .container_curriculo_text{
-    width: 650px;
+    width: 100%;
+    HEIGHT: 80%;
     display: flex;
-    gap: 2rem;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .curriculo_rightimg{
@@ -662,7 +673,7 @@ a{
     }
 
     .about_text{
-        font-size: 24px;
+        font-size: 15px;
     }
 
     .about .tittle{
