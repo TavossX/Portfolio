@@ -1,11 +1,17 @@
-ScrollReveal({
-    reset: true,
-    distance: '10px',
-    duration: 2000,
-    delay: 100
-});
-
-ScrollReveal().reveal('', { origin: 'bottom' });
-ScrollReveal().reveal('.img_svg, .about, .curriculo_text', { origin: 'right'});
-ScrollReveal().reveal('.text-left', { origin: 'top' });
-ScrollReveal().reveal('.container_titulo , .img_about', { origin: 'left' });
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#3B82F6",
+        secondary: "#10B981",
+        dark: "#1E293B",
+        light: "#F8FAFC",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        mono: ["Fira Code", "monospace"],
+      },
+    },
+  },
+};
