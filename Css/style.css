@@ -1,17 +1,162 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Navbar Links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3bb2f6ff, #10b981);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+/* Project Cards */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .project-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
 .project-card:hover .project-overlay {
   opacity: 1;
   transform: translateY(0);
 }
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Technology Badges */
+.project-card .bg-gray-200,
+.project-card .dark\:bg-gray-700 {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-card:hover .bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.project-card:hover .dark\:bg-gray-700 {
+  background-color: #374151;
+}
+
+/* Focus Visible */
 .focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+
+/* Hero Section */
+.bg-gradient-hero {
+  transition: background 0.5s ease;
+}
+
 .dark .bg-gradient-hero {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }
+
 .light .bg-gradient-hero {
   background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+}
+
+/* Buttons */
+button,
+a[class*="bg-"],
+a[class*="border-"] {
+  transition: all 0.3s ease;
+}
+
+/* Smooth transitions for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Project card images specific transition */
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
+/* Footer icons */
+footer a {
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateY(-2px);
+}
+
+/* Contact section icons */
+#contact .bg-primary\/10,
+#contact .dark\:bg-secondary\/10 {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#contact .flex.items-start:hover .bg-primary\/10,
+#contact .flex.items-start:hover .dark\:bg-secondary\/10 {
+  transform: scale(1.1);
+}
+
+/* Smooth scrolling offset for fixed navbar */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Improve button hover effects */
+.bg-primary:hover,
+.dark .bg-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Hero section image animation */
+#home img[alt="Foto de Otavio Martins"] {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Navbar scroll effect */
+nav {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Improve badge hover effect */
+.about-section span.bg-gray-200:hover,
+.about-section .dark span.bg-gray-700:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+  will-change: transform;
 }
